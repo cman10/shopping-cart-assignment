@@ -1,0 +1,49 @@
+$mobile: 320px;
+$tablet: 760px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@include mobile() {
+  .header-menus {
+    justify-content: flex-end !important;
+  }
+  .header-menu-items {
+    display: none;
+  }
+  .header-cart-container {
+    padding: 5px 20px;
+  }
+  .signin-container {
+    display: none;
+  }
+  .product-card {
+    width: 100% !important;
+  }
+  .product-card-image {
+    height: 150px !important;
+  }
+
+  .card-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-desc {
+    font-size: 15px;
+  }
+  .active-product {
+    display: block;
+  }
+  .products-container {
+    display: block !important;
+  }
+  .category-li {
+    width: 100% !important;
+  }
+  .right {
+    float: right;
+    font-size: 30px;
+  }
+}

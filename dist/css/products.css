@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 950px) {
+  .header-menu {
+    justify-content: end;
+  }
+  .header-menu-items {
+    display: none !important;
+  }
+  .header-cart-container {
+    padding: 5px 20px;
+  }
+  .signin-container {
+    display: none;
+  }
+}
